@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <button data-key="k" data-sound="kick" class="drum-button">
+            Kick <span class="key-hint">(K)</span>
+        </button>
+        <button data-key="h" data-sound="hihat" class="drum-button">
+            Hi-Hat <span class="key-hint">(H)</span>
+        </button>
+        <button data-key="s" data-sound="snare" class="drum-button">
+            Snare <span class="key-hint">(S)</span>
+        </button>
+        <button data-key="t" data-sound="tom" class="drum-button">
+            Tom <span class="key-hint">(T)</span>
+        </button>
+        <button data-key="r" data-sound="ride" class="drum-button">
+            Ride <span class="key-hint">(R)</span>
+        </button>
+    </div>
+
+    <audio id="kick" src="sounds/kick.wav" preload="auto"></audio>
+    <audio id="hihat" src="sounds/hihat.wav" preload="auto"></audio>
+    <audio id="snare" src="sounds/snare.wav" preload="auto"></audio>
+    <audio id="tom" src="sounds/tom.wav" preload="auto"></audio>
+    <audio id="ride" src="sounds/ride.wav" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

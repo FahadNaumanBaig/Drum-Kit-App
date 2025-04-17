@@ -1,0 +1,50 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    font-family: sans-serif; /* Added a default font */
+}
+
+/* Flexbox container to center and arrange buttons */
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;
+    flex-wrap: wrap;         /* Allow buttons to wrap on smaller screens */
+    gap: 15px;               /* Add space between buttons */
+    padding: 20px;           /* Add padding around the container */
+    box-sizing: border-box;  /* Include padding in width/height calculation */
+}
+
+/* Styling for all drum buttons */
+.drum-button {
+    padding: 20px 30px;
+    font-size: 1.2rem; /* Adjusted font size */
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    text-align: center;
+    transition: transform 0.07s ease, background-color 0.1s ease, border-color 0.07s ease, box-shadow 0.07s ease; /* Smooth transitions */
+    min-width: 100px; /* Give buttons a minimum width */
+}
+
+/* Styling for the key hint text inside buttons */
+.key-hint {
+    display: block; /* Put hint on a new line */
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Visual feedback for button press (click or keydown) */
+.drum-button.playing {
+    transform: scale(1.05); /* Slightly enlarge */
+    border-color: #ffc600;  /* Highlight border */
+    box-shadow: 0 0 10px #ffc600; /* Add glow */
+    background-color: #ddd; /* Slightly change background */
+}
